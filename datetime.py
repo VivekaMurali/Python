@@ -1,0 +1,16 @@
+from datetime import datetime,timedelta
+now=datetime.now()
+time=now.time()
+print('current Time:',time)
+today=datetime.today()
+print('Current date:',today)
+dy=today-timedelta(5)
+print('5 days before current date:',dy)
+print('Yesterday:',today-timedelta(1))
+print('Tomorrow:',today+timedelta(1))
+print('5 days after today:')
+for i in range(1,6):
+    t=today+timedelta(i)
+    print(t)
+sec=now+timedelta(0,5)
+print('Time after 5 seconds:',sec.time())
